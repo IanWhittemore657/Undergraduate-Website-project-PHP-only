@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+
+    <title>Blog!</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+       
+        html, body {
+            background-image: url("space.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0px;
+            min-height: 100%;
+            height: 162%;
+            padding: 20px;
+           
+        }
+
+        
+        .main {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: ghostwhite;
+        }
+
+        
+       
+        .col1 {
+            float: left;
+            width: 75%;
+            padding-left: 16px;
+        }
+
+        
+        .col2 {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+            padding-right:16px;
+        }
+
+
+
+        .images {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        
+        .card {
+            background-color: ghostwhite;
+            padding: 12px;
+            margin-top: 16px;
+
+
+        }
+
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .col1, .col2 {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        .p2 {
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Lucida Sans';
+        }
+
+        .images1 {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .text {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+
+
+            .images1:hover {
+                background-color: orangered;
+                
+            }
+
+                .images1:hover .image {
+                    opacity: 0.2;
+                }
+
+        .div1 {
+           
+        }
+
+            .div1:hover {
+                background-color: orangered;
+                opacity: 0.2;
+            }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+            border-radius: 8px;
+        }
+
+        .image2 {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        
+        }
+
+
+        .fa {
+            padding: 8px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+            .fa:hover {
+                color: orangered;
+                transition: color 0.3s ease-in;
+            }
+
+        .fa-facebook {
+            font-size: 1.3rem;
+            color: black;
+            
+        }
+
+        .fa-twitter {
+            font-size: 1.3rem;
+            color: black;
+        }
+
+        .fa-pinterest {
+            font-size: 1.3rem;
+            color: black;
+        }
+
+        .fa-instagram {
+            font-size: 1.3rem;
+            color: black;
+        }
+        .created
+        {
+            opacity:0.5;
+        }
+
+        h2 {
+            font-size: 50px;
+            font-family: 'Lucida Sans';
+        }
+        p{
+            font-family:Arial;
+            font-size:14px;
+        }
+
+        h4{
+            text-align:center;
+            font-family:'Lucida Sans';
+            font-size:20px;
+        }
+
+        h3 {
+            font-family: 'Lucida Sans';
+            font-size: 20px;
+            text-decoration:underline;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <h2>Blog Of Life</h2>
+        <p class="p2"><em>By Ian Whittemore</em></p>
+    </div>
+
+    <div class="row">
+
+        <div class="col1">
+
+            <div class="card" onclick="future()">
+                <div class="div1">
+
+                <img src="blog1.jpg" class="image2" alt="Pleasing image" style="width:100%" />
+                <div class="text" style="height:200px;">
+                    <h3>Whats up with Buckingham University </h3>
+                    <h5><span class="glyphicon glyphicon-time"></span>Created on<span class="created"> 14/05/2019 </span> </h5>
+
+                    <p>So what does this university have?</p>
+                    <p>Buckingham University has so much to offer , it gives someone a degree within 2 years !? who wouldnt want that, Not only is an amazing place to study but the professors and students make it such an amazing experience.</p>
+
+                </div>
+            </div>
+        </div>
+
+            <div class="card">
+                <div class="card" onclick="future()">
+                    <div class="div1">
+                        <img src="blog2.jpg" class="image2" alt="Pleasing image" style="width:100%" />
+                        <div class="text" style="height:200px;">
+                            <h3>The meaning of life </h3>
+                            <h5><span class="glyphicon glyphicon-time"></span>Created on<span class="created"> 08/03/2019 </span> </h5>
+
+                            <p>Is there purpose to life?</p>
+                            <p>A question that is only answered by most as "42" , but what more is there to life besides the number, what does our future have in store for us.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            </div>
+
+        <div class="col2">
+
+            <div class="card">
+
+                <h4>About Me</h4>
+
+                <div class="images"><img src="Swan.jpg" style="width:100%" alt="Swan" /></div>
+                <p>
+                    My name is Ian Whittemore , I am currently a student of Buckingham University. I am originally from South Africa and I came to the UK to study
+                    Software entreprenuership.I chose this university as it allows me to get (hopefully) a degree in 2 years.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Other Post's</h3>
+
+                <div class="images1" onclick="future()">
+                    <img src="laptop.jpg" class="image" style="width:100%" alt="laptoppost" />
+
+                    <p>Laptop are spying...</p> <label style="color:dimgrey">Read more</label>
+
+                </div><br>
+
+                <div class="images1" onclick="future()">
+                    <img src="building.jpg" class="image" style="width:100%" alt="Buildingpost" />
+                    <p>What buildings are...<p> <label style="color:dimgrey">Read more</label>
+                </div><br>
+
+                <div class="images1" onclick="future()">
+                    <img src="dog.jpg" class="image" style="width:100%" alt="dogpost" />
+                    <p>Your dog is smarter...<p> <label style="color:dimgrey">Read more</label>
+                </div><br>
+
+            </div>
+
+            <div class="card">
+
+                <h4>Follow me on : </h4>
+
+                <div style="text-align:center;">
+                    <a href="https://www.facebook.com/groups/515890888841420/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/Ianwhittemore2" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.pinterest.co.uk/ianwhittemore75/boards/" target="_blank" class="fa fa-pinterest"></a>
+                    <a href="https://www.instagram.com/websiteianwhittemore/?hl=en" target="_blank" class="fa fa-instagram"></a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <script>
+        function future() {
+            alert("For future growth");
+        }
+    </script>
+
+</body>
+</html>
